@@ -101,5 +101,3 @@ This document is an overview of the git merge command. Merging is an essential p
  
 
 Git merging combines sequences of commits into one unified history of commits.
-There are two main ways Git will merge: Fast Forward and Three way
-Git can automatically merge commits unless there are changes that conflict in both commit sequences.
