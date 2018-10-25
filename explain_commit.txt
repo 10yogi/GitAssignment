@@ -1,21 +1,24 @@
-When working in Git, or other version control systems, the concept of "saving" is a more nuanced process than saving in a word processor or other traditional file editing applications. The traditional software expression of "saving" is synonymous with the Git term "committing". A commit is the Git equivalent of a "save". Traditional saving should be thought of as a file system operation that is used to overwrite an existing file or write a new file. Alternatively, Git committing is an operation that acts upon a collection of files and directories.
+Commit command
 
-The commands: git add, git status, and git commit are all used in combination to save a snapshot of a Git project's current state.
+syntax : git commit
 
+git commit command is used along with git add command first we add the files which are untracked or modified and then can commit all those changes together in a single commit;
 
-git add <file>
-Stage all changes in <file> for the next commit.
+message : commit command also contain some message which should be brief and self explanatory;
 
-git add <directory>
-Stage all changes in <directory> for the next commit.
+we can check commit history using git log command;
 
-git add -p
+we can check out to any commit using command git checkout commit_id
 
+Staging area is used to add files temporarily which will committed altogether.
 
-git add .
+user should perform commit command whenever he completes a logical change
+
+eg.
+
+git add explain_commit.txt
+git add explain_stash.txt
 git commit
-Once you’ve got your project up-and-running, new files can be added by passing the path to git add:
 
-git add hello.py
-git commit
+first two cmmand add expalain_commit.txt and explain_stash.txt into staging area then git commit command will commit that change into brach on which it is performed (master here);
 
