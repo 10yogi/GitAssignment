@@ -19,6 +19,3 @@ Once you’ve got your project up-and-running, new files can be added by passing
 git add hello.py
 git commit
 
-
-Summary
-In review, git add is the first command in a chain of operations that directs Git to "save" a snapshot of the current project state, into the commit history. When used on its own, git add will promote pending changes from the working directory to the staging area. The git status command is used to examine the current state of the repository and can be used to confirm a git add promotion. The git reset command is used to undo a git add. The git commit command is then used to Commit a snapshot of the staging directory to the repositories commit history.
