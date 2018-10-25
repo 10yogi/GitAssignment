@@ -1,0 +1,24 @@
+When working in Git, or other version control systems, the concept of "saving" is a more nuanced process than saving in a word processor or other traditional file editing applications. The traditional software expression of "saving" is synonymous with the Git term "committing". A commit is the Git equivalent of a "save". Traditional saving should be thought of as a file system operation that is used to overwrite an existing file or write a new file. Alternatively, Git committing is an operation that acts upon a collection of files and directories.
+
+The commands: git add, git status, and git commit are all used in combination to save a snapshot of a Git project's current state.
+
+
+git add <file>
+Stage all changes in <file> for the next commit.
+
+git add <directory>
+Stage all changes in <directory> for the next commit.
+
+git add -p
+
+
+git add .
+git commit
+Once you’ve got your project up-and-running, new files can be added by passing the path to git add:
+
+git add hello.py
+git commit
+
+
+Summary
+In review, git add is the first command in a chain of operations that directs Git to "save" a snapshot of the current project state, into the commit history. When used on its own, git add will promote pending changes from the working directory to the staging area. The git status command is used to examine the current state of the repository and can be used to confirm a git add promotion. The git reset command is used to undo a git add. The git commit command is then used to Commit a snapshot of the staging directory to the repositories commit history.
