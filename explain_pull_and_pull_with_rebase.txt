@@ -23,6 +23,4 @@ Similar to the default invocation, fetches the remote content but does not creat
 3. git pull --rebase <remote>
 Same as the previous pull Instead of using git merge to integrate the remote branch with the local one, use git rebase.
 
-4. git pull --verbose
-Gives verbose output during a pull which displays the content being downloaded and the merge details.
 
