@@ -209,5 +209,4 @@ $ git stash clear
 How git stash works
 If you just wanted to know how use git stash, you can stop reading here. But if you're curious about how Git (and git stash) works under the hood, read on!
 
-Stashes are actually encoded in your repository as commit objects. The special ref at .git/refs/stash points to your most recently created stash, and previously created stashes are referenced by the stash ref's reflog. This is why you refer to stashes by stash@{n}: you're actually referring to the nth reflog entry for the stash ref. Since a stash is just a commit, you can inspect it with git log:
 
